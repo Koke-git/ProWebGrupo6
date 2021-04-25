@@ -9,7 +9,7 @@ p{
 header > div > img
 {
     margin-left: 20px;
-    width: 100px;
+    width: 150px;
    
 
 }
@@ -17,6 +17,7 @@ h1{
     color: rgb(255, 255, 255);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 50px;
-    bottom: 20px;
+    bottom: 30px;
+   
 
 }
