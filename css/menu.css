@@ -25,3 +25,33 @@
     color: black;
     transition: 0.5s;
 }
+nav > div > a
+{
+    background:rgb(8, 8, 8);
+    
+    transition: 0.5s;
+}
+
+ul >li > a
+{
+    background:rgb(0, 0, 0);
+   
+}
+
+
+
+
+
+nav > div > a:hover
+{
+    background:rgb(245, 219, 71);
+    color: black;
+    transition: 0.5s;
+}
+
+ul >li > a:hover
+{
+    background:rgb(245, 219, 71);
+    color: black;
+    transition: 0.5s;
+}
