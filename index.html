@@ -20,48 +20,54 @@
 <body>
     <header>
         <div style="background: black;" class="container-fluid">
-            <nav            class="navbar navbar-expand-lg navbar-dark bg-#000000">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">MANTENCIONES</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">REPARACIONES</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">QUIENES SOMOS</a>
-                      </li>   <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIAR SECION</a>                    
-                     
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                  </div>
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">MANTENCIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">REPARACIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">QUIENES SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">INICIAR SECION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="formcontacto.html">CONTACTENOS</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
-              </nav>
+            </nav>
         </div>
-        <img src="img/logo_marcas_autos.jpg"  class="img-fluid">
+        <img src="img/logo_marcas_autos.jpg" class="img-fluid">
 
         <div>
 
             <img src="img/logo.png" class="float-left">
         </div>
-        <H1>   TALLER MECANICO RAYO MCQUEEN</H1>
+        <H1> TALLER MECANICO RAYO MCQUEEN</H1>
         <br>
 
         <section class="main row">
-            <img  class="col-xs-12 col-sm-6 col-md-4 col-lg-2" src="img/duoc_mecanico.jpg"> </img>
+            <img class="col-xs-12 col-sm-6 col-md-4 col-lg-2" src="img/duoc_mecanico.jpg"> </img>
 
             <section class="col-xs-12 col-sm-6 col-md-8 col-lg-10">
                 <h3 style="color: aliceblue">Bienvenidos!</h3>
@@ -79,7 +85,7 @@
 
 
         </div>
-        
+
         <h1 style="color: darkgoldenrod;" class="container-fluid">Nuestros trabajos</h1>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
@@ -126,7 +132,7 @@
             </button>
 
         </div>
-       
+
         <br>
         <br>
         <br>
@@ -135,29 +141,34 @@
                 <div class="container">
 
 
-                    <form style="border-radius: 13px  ; background: rgb(121, 120, 120) ;" class="row g-3" onsubmit="return  validaFomrIndex()">
+                    <form style="border-radius: 13px  ; background: rgb(121, 120, 120) ;" class="row g-3"
+                        onsubmit="return  validaFomrIndex()">
                         <h3 class="col-12" style="color: rgb(253, 237, 5);">Contáctanos</h3>
                         <div class="col-6">
                             <label for="" class="form-label">Nombre</label>
-                            <input type="text" class="form-control"  id="txtNombre" placeholder="Ingrese su Nombre"   minlength="3" pattern="[A-Za-z ]{3,45}" title="solo letras entre 3 a 45 caracteres">
+                            <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su Nombre"
+                                minlength="3" pattern="[A-Za-z ]{3,45}" title="solo letras entre 3 a 45 caracteres">
                         </div>
                         <div class="col-6">
                             <label for="" class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="txtApellido"  placeholder="Ingrese su Apellido" minlength="3"  title="solo letras entre 3 a 45 caracteres">
+                            <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su Apellido"
+                                minlength="3" title="solo letras entre 3 a 45 caracteres">
                         </div>
 
                         <div class="col-6">
                             <label for="inputEmail4" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail4" required  placeholder="ejemplo@gmail.cl">
+                            <input type="email" class="form-control" id="inputEmail4" required
+                                placeholder="ejemplo@gmail.cl">
                         </div>
                         <div class="col-6">
                             <label for="" class="form-label">Telefono</label>
-                            <input type="text" class="form-control" id=""  placeholder="Ingrese un Telefono" required title="debe tener como monimo 9 digitos y maximo 10">
+                            <input type="text" class="form-control" id="" placeholder="Ingrese un Telefono" required
+                                title="debe tener como monimo 9 digitos y maximo 10">
                         </div>
 
                         <div class="col-12">
                             <label for="" class="form-label">Mensaje</label>
-                            <input type="text" class="form-control" id="txtMensaje"  placeholder="Escriba un mensaje">
+                            <input type="text" class="form-control" id="txtMensaje" placeholder="Escriba un mensaje">
                         </div>
                         <div style="color: floralwhite;" class="col-9">¡Gracias Por tu mensaje!</div>
 
