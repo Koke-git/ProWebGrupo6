@@ -1,6 +1,4 @@
 
-
-
 .menu a{   
 
     
@@ -11,7 +9,7 @@
     padding-bottom: 30px;
    
     text-decoration: none;
-    
+    background:rgb(0, 0, 0);  
     border-bottom: solid 1px rgb(65, 64, 64);  
     border-radius: 0px 0px 2px 2px;
     font-family:Arial, Helvetica, sans-serif;
@@ -24,23 +22,25 @@
 
 
 
+
+
 .menu a:hover{
    
-    background:rgb(83, 79, 56);
+    background:rgb(245, 219, 71);
     color: black;
     transition: 0.5s;
 }
 nav > div > a
 {
-    background: linear-gradient(to top, #232526, #414345); 
+    background:rgb(8, 8, 8);
     
     transition: 0.5s;
 }
 
 ul >li > a
 {
-    background: linear-gradient(to top, #232526, #414345); 
-   
+    background:rgb(0, 0, 0);
+   color: aliceblue;
 }
 
 
@@ -49,15 +49,14 @@ ul >li > a
 
 nav > div > a:hover
 {
-    background:rgb(241, 209, 49);
+    background:rgb(245, 219, 71);
     color: black;
     transition: 0.5s;
 }
 
 ul >li > a:hover
 {
-    background:rgb(230, 201, 37);
+    background:rgb(245, 219, 71);
     color: black;
     transition: 0.5s;
 }
-/*---------------carlos ------------------------------------*/

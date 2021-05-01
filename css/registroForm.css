@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Girassol&family=Kalam&display=swap');
+
+
+
+
+
+.formulario {
+  background: transparent; /*da color de fondo del formulario*/
+  opacity: 0.9;
+  padding: 60px;
+}
+
+
+.form-registro{
+  background: linear-gradient(to left, #536976, #292e49);
+  width: 95%; /*solo va a crecer un 85% de la panatalla*/
+  margin: auto; /*situa todo al centro*/
+  max-width: 800px; /*solo va a crecer 500 px */
+  border-radius: 8px; /*las puntas del formulario ya no tien puntas*/
+  padding: 10px ;
+}
+
+
+.contenedor-input {
+  color: rgb(211, 211, 186);
+  text-align:center;
+  padding: 20px 5px ;
+  display: flex;
+  flex-wrap: wrap; /* las cajas se acomodan cuando la pantalla se achique*/
+  /*cada una de las filas se van hacia los lados */
+}
+
+.col-12{
+  font-family: 'Abril Fatface', cursive;
+  padding: 5px;
+}
+
+.col-4{
+  text-align: left;
+  font-family: 'Abril Fatface', cursive;
+  padding: 5px;
+  }
+
+.form-control{
+  font-family: 'Kalam', cursive;
+}
+.col-sm{
+   width: 42%;
+}
+
+.col-xl{
+   width: 100%;
+   
+}
+
+
+.col-3{
+padding: 30px 10px 20px ;
+
+}
+.floatingTextarea2{
+  padding: 700px;
+}

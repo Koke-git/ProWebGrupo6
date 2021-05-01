@@ -17,12 +17,12 @@
 
 </head>
 
-<body background="img/carsmenu.jpg">
+<body>
     <header>
-        <div style="background: linear-gradient(to top, #232526, #414345) " class="container-fluid">
+        <div style="background: black;" class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Menu</a>
+                    <a class="navbar-brand" href="#">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -30,9 +30,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">MANTENCIONES</a>
                             </li>
@@ -42,15 +40,51 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">QUIENES SOMOS</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    CATEGORIAS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">TREN DELANTERO</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">PASTILLAS</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">CAMBIO DE ACEITE</a></li>
+                                </ul>
+                            </li>
 
+                            <li class="nav-item dropdown">
+                                <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    MECANICOS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="#">JUAN PEREZ</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">PEDRITO MANN</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">MARCOS MENDEZ</a></li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">INICIAR SESION</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="formcontacto.html">CONTACTENOS</a>
                             </li>
-                            <li><button type="button" class="btn btn-primary" data-toggle="modal"
-                                    style="background: linear-gradient(to top, #232526, #414345)"
-                                    data-target="#myModal">
-                                    INICIAR SESION
-                                </button></li>
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -60,57 +94,13 @@
                 </div>
             </nav>
         </div>
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-            <div class="modal-dialog">
-                <div class="modal-content" style="background: linear-gradient(to right, #797e5e, #403B4A); ">
-
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Iniciar sesion</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <form action="/action_page.php">
-                            <div class="form-group">
-                                <label for="email">Email address:</label>
-                                <input type="email" class="form-control" placeholder="Enter email" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="pwd">Password:</label>
-                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
-                            </div>
-                            <div class="form-group form-check">
-                                <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox"> Remember me
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
         <img src="img/logo_marcas_autos.jpg" class="img-fluid">
 
         <div>
 
-
-
-
-
             <img src="img/logo.png" class="float-left">
         </div>
-        <H1 class="tituloP"> TALLER MECANICO RAYO MCQUEEN</H1>
+        <H1> TALLER MECANICO RAYO MCQUEEN</H1>
         <br>
 
         <section class="main row">
@@ -127,60 +117,13 @@
         <br>
 
 
+        <div class="container">
 
 
-        <div>
-
-            <h1 style="color: darkgoldenrod;" class="NuestrosTrabajos">Nuestros Servicios</h1>
-            <img src="img/Servicios.png" class="fotoServicio" alt="">
-        </div>
-
-
-        <div class="container ">
-        <div class="main row">
-
-            
-
-            <div class="col-xs-12  col-sm-6 col-md-4 col-lg-2 ">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/cambioAceite.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px ; margin-bottom: 15px;" src="img/botones_servicios/bateria.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/scaner.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/revisionFull.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/frenos.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/kilometraje.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/otros.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/informacion.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                <a href=""><img style="border-radius: 5px; margin-bottom: 15px;" src="img/botones_servicios/dudas.jpg" alt=""></a>
-            </div>
-        </div>
 
         </div>
 
-
-
-
-        <div>
-
-            <h1 style="color: darkgoldenrod;" class="NuestrosTrabajos">Nuestros trabajos</h1>
-        </div>
-
-
+        <h1 style="color: darkgoldenrod;" class="container-fluid">Nuestros trabajos</h1>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
@@ -224,7 +167,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+
         </div>
 
         <br>
@@ -235,53 +178,53 @@
                 <div class="container">
 
 
-                    <form style="border-radius: 13px  ; background: rgb(121, 120, 120) ;opacity: 0.7 ;" class="row g-3"
+                    <form style="border-radius: 13px  ; background: rgb(121, 120, 120) ;" class="row g-3"
                         onsubmit="return  validaFomrIndex()">
-                        <h3 class="col-12" style="color: rgb(253, 237, 5); opacity: 1;">Contáctanos</h3>
+                        <h3 class="col-12" style="color: rgb(253, 237, 5);">Contáctanos</h3>
                         <div class="col-6">
-                            <label for="" class="form-label" style="opacity: 1;">Nombre</label>
+                            <label for="" class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese su Nombre"
                                 minlength="3" pattern="[A-Za-z ]{3,45}" title="solo letras entre 3 a 45 caracteres">
                         </div>
                         <div class="col-6">
-                            <label for="" class="form-label" style="opacity: 1;" ;>Apellido</label>
+                            <label for="" class="form-label">Apellido</label>
                             <input type="text" class="form-control" id="txtApellido" placeholder="Ingrese su Apellido"
                                 minlength="3" title="solo letras entre 3 a 45 caracteres">
                         </div>
 
                         <div class="col-6">
-                            <label for="inputEmail4" class="form-label" style="opacity: 1;">Email</label>
+                            <label for="inputEmail4" class="form-label">Email</label>
                             <input type="email" class="form-control" id="inputEmail4" required
                                 placeholder="ejemplo@gmail.cl">
                         </div>
                         <div class="col-6">
-                            <label for="" class="form-label" style="opacity: 1;">Telefono</label>
+                            <label for="" class="form-label">Telefono</label>
                             <input type="text" class="form-control" id="" placeholder="Ingrese un Telefono" required
                                 title="debe tener como monimo 9 digitos y maximo 10">
                         </div>
 
                         <div class="col-12">
-                            <label for="" class="form-label" style="opacity: 1;">Mensaje</label>
+                            <label for="" class="form-label">Mensaje</label>
                             <input type="text" class="form-control" id="txtMensaje" placeholder="Escriba un mensaje">
                         </div>
-                        <div style="color: floralwhite;" class="col-9">¡Gracias Por tu mensaje!</div>
+                        <div style="color: floralwhite;" class="col-9">¡Gracias Por contactarnos!</div>
 
                         <div class="col-3">
-                            <button style="margin-bottom: 10px; opacity: 1; " type="submit"
-                                class="btn btn-primary">Enviar</button>
+                            <button style="margin-bottom: 10px;  " type="submit" class="btn btn-primary">Enviar</button>
                         </div>
 
                     </form>
                 </div>
+            </div>
         </section>
-        </div>
+
         <br>
 
     </header>
 
 
-    <footer>
-        <div class="card" style="background: black;">
+    <footer >
+        <div style="background: grey; " class="card">
             <div class="card-header">
                 Featured
             </div>
@@ -297,16 +240,6 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <!--<script src="js/bootstrap.min.js"></script> -->
-    <!--SCRIPTS-->
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 
 

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona de Ingreso de OT</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/MenuRegistro.css">
+    <link rel="stylesheet" href="css/registroForm.css">
+
+
+</head>
+
+<body>
+
+    <!--cabecera de la pagina web    -->
+    <header>
+        <div class="">
+            <nav class="menuRegistro">
+
+                <section class="row">
+                    <a class="col-xs-6 col-sm-6 col-md-4 col-lg-2 offset-lg-3" href="">ORDEN DE TRABAJO</a>
+
+                    <a class="col-xs-6 col-sm-6 col-md-4 col-lg-2" href="">HISTORIAL</a>
+
+                    <a class="col-xs-6 col-sm-6 col-md-4 col-lg-2" href="">CERRAR SESIÓN</a>
+
+                </section>
+            </nav>
+        </div>
+    </header>
+    <!-- sector principal de la pagina   -->
+    <main>
+        <div class="container-fluid">
+            <section class="rowFormulario">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 offset-lg-3 ">
+                    <div class="formulario">
+
+
+                        <form class="form-registro" action="" method="post">
+
+                            <div class="contenedor-input">
+                                <h2 class="col-12">Ingreso Orden de Trabajo</h2>
+
+                                <div class="col-6">
+                                    <label for="" class="form-label" style="text-align:end ;">N° de Orden</label>
+                                    <input type="number" class="form-control" style="text-align:end ;" id="nro_orden"
+                                        placeholder="1" minlength="3" pattern="[0-9]">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">Fecha</label>
+                                    <input type="date" class="form-control" id="txtfecha" minlength="3"
+                                        title="solo letras entre 3 a 45 caracteres">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="txtNombre" placeholder="Ingrese Nombre"
+                                        minlength="3" title="solo letras entre 3 a 45 caracteres">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="txtApellido"
+                                        placeholder="Ingrese su Apellido" minlength="3"
+                                        title="solo letras entre 3 a 45 caracteres">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">Rut</label>
+                                    <input type="text" class="form-control" id="txtPatente"
+                                        placeholder="Ingrese Patente ej: AAAA-11" minlength="3"
+                                        pattern="[A-Za-z ]{3,45}" title="solo letras entre 3 a 45 caracteres">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">Patente</label>
+                                    <input type="text" class="form-control" id="txtPatente"
+                                        placeholder="Ingrese Patente ej: AAAA-11" minlength="3"
+                                        pattern="[A-Za-z ]{3,45}" title="solo letras entre 3 a 45 caracteres">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="" class="form-label">Marca</label>
+                                    <select  class="form-control" id="txtTipoCombustible">
+                                        <option class="form-control">Seleccione opcion</option>
+                                        <option class="form-control"> ALFA ROMEO </option>
+                                        <option class="form-control"> AUDI </option>
+                                        <option class="form-control"> ASTON MARTIN </option>
+                                        <option class="form-control"> BAIC </option>
+                                        <option class="form-control"> BMW </option>
+                                        <option class="form-control"> BRILLIANCE </option>
+                                        <option class="form-control"> BYD </option>
+                                        <option class="form-control"> CHANGAN </option>
+                                        <option class="form-control"> CHERY </option>
+                                        <option class="form-control"> CHEVROLET </option>
+                                        <option class="form-control"> CHRYSLER </option>
+                                        <option class="form-control"> CITROËN </option>
+                                        <option class="form-control"> DFM </option>
+                                        <option class="form-control"> DFSK </option>
+                                        <option class="form-control"> DODGE </option>
+                                        <option class="form-control"> DONGFENG </option>
+                                        <option class="form-control"> FAW </option>
+                                        <option class="form-control"> FERRARI </option>
+                                        <option class="form-control"> FIAT </option>
+                                        <option class="form-control"> FORD </option>
+                                        <option class="form-control"> FOTON </option>
+                                        <option class="form-control"> GAC GONOW </option>
+                                        <option class="form-control"> GEELY </option>
+                                        <option class="form-control"> GREAT WALL </option>
+                                        <option class="form-control"> HONDA </option>
+                                        <option class="form-control"> HYUNDAI </option>
+                                        <option class="form-control"> JAC </option>
+                                        <option class="form-control"> JAGUAR </option>
+                                        <option class="form-control"> FERRARI </option>
+                                        <option class="form-control"> FERRARI </option>
+                                        <option class="form-control"> FERRARI </option>
+                                        <option class="form-control"> KIA </option>
+                                        <option class="form-control"> LAND ROVER </option>
+                                        <option class="form-control"> LIFAN </option>
+                                        <option class="form-control"> LEXUS </option>
+                                        <option class="form-control"> MAHINDRA </option>
+                                        <option class="form-control"> MASERATI </option>
+                                        <option class="form-control"> MAXUS </option>
+                                        <option class="form-control"> MAZDA </option>
+                                        <option class="form-control"> MERCEDES BENZ </option>
+                                        <option class="form-control"> MG </option>
+                                        <option class="form-control"> MINI </option>
+                                        <option class="form-control"> MITSUBISHI MOTORS </option>
+                                        <option class="form-control"> NISSAN </option>
+                                        <option class="form-control"> OPEL </option>
+                                        <option class="form-control"> PEUGEOT </option>
+                                        <option class="form-control"> PORSCHE </option>
+                                        <option class="form-control"> RENAULT </option>
+                                        <option class="form-control"> SEAT </option>
+                                        <option class="form-control"> SKODA </option>
+                                        <option class="form-control"> SSANGYONG </option>
+                                        <option class="form-control"> SUBARU </option>
+                                        <option class="form-control"> SUZUKI </option>
+                                        <option class="form-control"> TOYOTA </option>
+                                        <option class="form-control"> VOLKSWAGEN </option>
+                                        <option class="form-control"> VOLVO </option>                                       
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="" class="form-label">Modelo</label>
+                                    <input type="text" class="form-control" id="txtModelo" placeholder="Ingrese Modelo"
+                                        minlength="3" title="solo letras entre 3 a 45 caracteres">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">CC Motor</label>
+                                    <input type="text" class="form-control" id="txtModelo" placeholder="Ej: 1.6"
+                                        minlength="3" title="solo letras entre 3 a 45 caracteres">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">Telefono</label>
+                                    <input type="text" class="form-control" id="txtTelefono"
+                                        placeholder="Ingrese Modelo" minlength="3"
+                                        title="solo letras entre 3 a 45 caracteres">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class="form-label">Tipo Combustible</label>
+                                    <select class="form-control" id="txtTipoCombustible">
+                                        <option class="form-control">Seleccione opcion</option>
+                                        <option class="form-control">Bencina</option>
+                                        <option class="form-control">Diesel</option>
+                                        <option class="form-control">Gas</option>
+                                        <option class="form-control">Electrico</option>
+                                        <option class="form-control">Agua</option>
+                                </div>
+                                <div class="col-3">
+                                    <button style="margin-bottom: 10px;  " type="submit"
+                                        class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </section>
+        </div>
+        <br>
+
+
+
+    </main>
+</body>
+
+</html>
