@@ -1,0 +1,9 @@
+body{
+    background: url(../img/imgficha.jpeg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;  
+    
+}
+label{
+    color: white;
+}

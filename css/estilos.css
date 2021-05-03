@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Yanone+Kaffeesatz:wght@400;600&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Yanone+Kaffeesatz:wght@400;600&family=Zen+Dots&display=swap');
+
+
+
 body{
         background: url(CarsOScuro.jpeg);
         background-size: 100vw 100vh;
@@ -60,3 +63,19 @@ h3{
 
 }
 
+.contact-info {
+    background: #000;
+    padding: 0px 10px 10px;
+    margin: 0;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.lineU{
+    padding: 0px;
+    margin: 0px 0px;
+
+}
