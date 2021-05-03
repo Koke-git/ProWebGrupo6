@@ -1,5 +1,6 @@
 
-Estas Rama pertenece a Jorge Díaz
+Estas Rama Principal
+
 =======
 # Proyecto Web Semestral
 
