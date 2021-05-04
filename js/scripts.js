@@ -366,9 +366,8 @@ function validaAnioAuto()
 {
     var fechaSistema = new Date();
     var anito = fechaSistema.slice(0, 4);
-
-
     var anio = document.getElementById('txtanio').value;
+    
     if (anio < 1970) {
 
         Swal.fire(
@@ -379,6 +378,7 @@ function validaAnioAuto()
             });
         return false;
     }
+    /*/
     if (anio + 1 <= anito ) {
 
         Swal.fire(
@@ -388,7 +388,7 @@ function validaAnioAuto()
                 text: 'El año debe como maximo puede ser el '+ anito+1
             });
         return false;
-    }
+    }/*/
 
     return true;
 
