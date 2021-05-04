@@ -1,5 +1,46 @@
+function validaOrdenTrabajo() {
+    var resp = validaNombre();
+    if (resp == false) {
+        return false;
+    }
+
+    var resp = validaApellido();
+    if (resp == false) {
+        return false;
+    }
+
+
+    var resp = validarRut();
+    if (resp == false) {
+        return false;
+    }
+
+    var resp = validaMarcaOrderTrabajo();
+    if (resp == false) {
+        return false;
+    }
+
+    var resp = validaTipoMotor();
+    if (resp == false) {
+        return false;
+    }
+  
+    
+    var resp = validaMensaje();
+    if (resp == false) {
+        return false;
+    }
+    
+    var resp = validaAnioAuto();
+    if (resp == false) {
+        return false;
+    }
+
+    return true;
+}
+
 function validaagendamiento() {
-   
+
     var resp = validaMecanico();
     if (resp == false) {
         return false;
@@ -10,9 +51,9 @@ function validaagendamiento() {
     if (resp == false) {
         return false;
     }
-   
-   
-   
+
+
+
     var resp = validaNombre();
     if (resp == false) {
         return false;
@@ -36,8 +77,11 @@ function validaagendamiento() {
         return false;
     }
 
-
-
+    var resp = validarFecha();
+    if (resp == false) {
+        return false;
+    }
+   
 
     return true;
 
@@ -203,7 +247,7 @@ function validaMecanico() {
             });
         return false;
     }
-   
+
     return true;
 }
 function validaServicio() {
@@ -218,7 +262,134 @@ function validaServicio() {
             });
         return false;
     }
-   
+
     return true;
 }
 
+function validarRut() {
+    var rut = document.getElementById('txtRut').value;
+    //alert(rut);
+    var num = 3;
+    var suma = 0;
+    for (let index = 0; index < 8; index++) {
+        var caracter = rut.slice(index, index + 1);
+        //alert(caracter + ' x ' + num);
+        suma = suma + (caracter * num);
+        num = num - 1;
+        if (num == 1) {
+            num = 7;
+        }
+    }
+    //alert('Suma:'+suma);
+    var resto = suma % 11;
+    var dv = 11 - resto;
+    if (dv > 9) {
+        if (dv == 10) {
+            dv = 'K';
+        } else {
+            dv = 0;
+        }
+    }
+    //alert('DV:'+dv);
+    var dv_usuario = rut.slice(-1).toUpperCase();
+    if (dv != dv_usuario) {
+        //alert('rut incorrecto');
+        //Swal.fire('el rut es incorrecto');
+        Swal.fire({
+            icon: 'error',
+            title: 'digito verificador rut',
+            text: 'el digito de su rut es incorrecto'
+        });
+        return false;
+    }
+    return true;
+}
+
+function validarFecha() {
+    var fechaUsuario = document.getElementById('txtFechaAgendamiento').value;
+    var fechaSistema = new Date();
+    console.log('Fecha Usuario:' + fechaUsuario);
+    console.log('Fecha Sistema:' + fechaSistema);
+
+    var anito = fechaUsuario.slice(0, 4);
+    var mes = fechaUsuario.slice(5, 7);
+    var dia = fechaUsuario.slice(8, 10);
+    console.log('A:' + anito + ' M:' + mes + ' D:' + dia);
+    var fechaNuevaUsuario = new Date(ano, (mes - 1), dia);    
+    if (fechaNuevaUsuario < fechaSistema) {
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Fecha de Mantencion',
+            text: 'Fecha de de mantencion es menor a la fecha actual'
+        });
+        return false;
+    }
+
+    return true;
+}
+
+function validaMarcaOrderTrabajo() {
+    var nombre = document.getElementById('cmbmarca').value;
+    if (nombre == "Seleccione opcion") {
+
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Marca',
+                text: 'Debe seleccionar una de las marcas'
+            });
+        return false;
+    }
+
+    return true;
+}
+
+function validaTipoMotor() {
+    var nombre = document.getElementById('cmbmotor').value;
+    if (nombre == "Seleccione opcion") {
+
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Motor',
+                text: 'Debe seleccionar el tipo de motor'
+            });
+        return false;
+    }
+
+    return true;
+}
+
+
+function validaAnioAuto()
+{
+    var fechaSistema = new Date();
+    var anito = fechaSistema.slice(0, 4);
+
+
+    var anio = document.getElementById('txtanio').value;
+    if (anio < 1970) {
+
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Año',
+                text: 'El año debe ser mayor o igual a 1970!'
+            });
+        return false;
+    }
+    if (anio + 1 <= anito ) {
+
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Año',
+                text: 'El año debe como maximo puede ser el '+ anito+1
+            });
+        return false;
+    }
+
+    return true;
+
+}

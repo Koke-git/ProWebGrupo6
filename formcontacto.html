@@ -98,10 +98,12 @@
                             <input type="email" class="form-control" id="inputEmail4" required
                                 placeholder="ejemplo@gmail.cl">
                         </div>
+                        
                         <div class="col-6">
-                            <label for="" class="form-label">Telefono</label>
-                            <input type="text" class="form-control" id="" placeholder="Ingrese un Telefono" required
-                                title="debe tener como monimo 9 digitos y maximo 10">
+                            <label for="" class="form-label" style="opacity: 1;">Telefono</label>
+                            <input type="text" class="form-control" id="" placeholder="Ingrese un Telefono" required minlength="8"
+                            pattern="[0-9]{8,9}" title="ingrese un telefono de casa ej. +569 77777777"
+                                >
                         </div>
 
                         <div class="col-12">

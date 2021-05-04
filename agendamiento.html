@@ -23,41 +23,41 @@
   <header>
     <div style="background: linear-gradient(to top, #232526, #414345) " class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menu</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">MANTENCIONES</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">REPARACIONES</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">QUIENES SOMOS</a>
-                      </li>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">MANTENCIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">REPARACIONES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">QUIENES SOMOS</a>
+              </li>
 
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="formcontacto.html">CONTACTENOS</a>
-                      </li>
-                      
-                  </ul>
-                  <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-              </div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="formcontacto.html">CONTACTENOS</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
           </div>
+        </div>
       </nav>
-  </div>
+    </div>
     <img src="img/logo_marcas_autos.jpg" class="img-fluid">
 
 
@@ -85,7 +85,7 @@
                 <option>Juan Pablo Lopez</option>
                 <option>Pablo Lagos Campos</option>
                 <option>Sofia Vergara Castro</option>
-                <option>Pedro Carcuro Carcamo</option>               
+                <option>Pedro Carcuro Carcamo</option>
               </select>
             </div>
 
@@ -116,7 +116,8 @@
             </div>
             <div class="col-6">
               <label for="" class="form-label">Fecha</label>
-              <input type="date" class="form-control" id="" placeholder="Fecha">
+              <input type="date" class="form-control" id="txtFechaAgendamiento" required placeholder="Fecha"
+                title="Debe indicar fecha igual o mayor a la actual">
             </div>
             <div class="col-6">
               <label for="inputEmail4" class="form-label">Email</label>
@@ -151,7 +152,7 @@
             </div>
             <div class="col-6">
               <button style="margin-bottom: 10px;  " type="reset" class="btn btn-primary">Limpiar</button>
-             <!-- <a class="btn btn-outline-info" href="ficha.html" role="button">Volver</a> -->
+              <!-- <a class="btn btn-outline-info" href="ficha.html" role="button">Volver</a> -->
 
             </div>
           </form>
