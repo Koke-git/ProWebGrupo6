@@ -1,0 +1,19 @@
+
+p ::placeholder{
+    color: black;
+}
+
+.boton-ac{
+    display: inline;
+
+}
+
+.botonO{
+    border-style: double;
+    border-color: cadetblue;
+    
+}
+
+.botonO h5{
+    text-align: center;
+}
