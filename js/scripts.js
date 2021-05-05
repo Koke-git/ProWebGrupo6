@@ -1,6 +1,8 @@
 
-function  CreaUser()
-{
+function CreaUser() {
+
+
+
     var resp = validaNombre();
     if (resp == false) {
         return false;
@@ -16,6 +18,10 @@ function  CreaUser()
     if (resp == false) {
         return false;
     }
+
+    
+    return true;
+
 }
 
 
@@ -26,7 +32,7 @@ function validaOrdenTrabajo() {
 
 
 
-   
+
     var resp = validaNombre();
     if (resp == false) {
         return false;
@@ -397,7 +403,7 @@ function validaAnioAuto() {
     var fechaSistema = new Date();
     var anito2 = fechaSistema.slice(0, 4);
     var anio2 = document.getElementById('txtanio').value;
-var anioNum =  parseFloat(anio2);
+    var anioNum = parseFloat(anio2);
     if (anioNum < 1970) {
 
         Swal.fire(
@@ -453,11 +459,12 @@ function ValidaTamanioMotor() {
 }
 
 
-
+/*/
 function validaPassword() {
-    var pass1= document.getElementById('txtPass1').value;
-    var pass2= document.getElementById('txtPass2').value;
 
+    var pass1 = document.getElementById('txtPass1').value;
+    var pass2 = document.getElementById('txtPass2').value;
+ 
     if (pass1 =! pass2) {
 
         Swal.fire(
@@ -471,3 +478,4 @@ function validaPassword() {
 
     return true;
 }
+/*/
