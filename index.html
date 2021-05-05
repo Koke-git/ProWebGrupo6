@@ -40,9 +40,23 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">REPARACIONES</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Mecanicos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="mecanico.html">Jose Lopez</a></li>
+                                  <li><a class="dropdown-item" href="mecanico1.html">Pablo Lagos</a></li>
+                                  <li><a class="dropdown-item" href="mecanico2.html">Sofia Vergara</a></li>
+                                  <li><a class="dropdown-item" href="mecanico3.html">Pedro Carcuro</a></li>
+                                </ul>
+                              </li>
+
+
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">QUIENES SOMOS</a>
                             </li>
+                            
 
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="formcontacto.html">CONTACTENOS</a>
@@ -61,6 +75,15 @@
                 </div>
             </nav>
         </div>
+
+<div style="background: black;">
+<div class="container-fluid">
+<div  id="valor_dolar"  style="color: chartreuse; background: black;"></div>
+<div  id="valor_dolar"  style="color: white; background: black;">Compra tus repuestos en el extrajeros con nosotros</div>
+</div>
+</div>
+
+
         <!-- The Modal -->
         <div class="modal" id="myModal">
             <div class="modal-dialog">
@@ -88,7 +111,7 @@
                                     <input class="form-check-input" type="checkbox"> Remember me
                                 </label>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Inicicar</button>
                         </form>
                     </div>
 
@@ -326,6 +349,18 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+        $.get("https://mindicador.cl/api/dolar",function(data){
+            var dolar = data.serie[0].valor;
+         $("#valor_dolar").html( "Valor dolar Observado: $" + dolar + " ") ;
+        })
+    
+    });
+</script>
+
 
 </body>
 

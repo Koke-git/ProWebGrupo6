@@ -1,4 +1,32 @@
+
+function  CreaUser()
+{
+    var resp = validaNombre();
+    if (resp == false) {
+        return false;
+    }
+
+    var resp = validaApellido();
+    if (resp == false) {
+        return false;
+    }
+
+
+    var resp = validarRut();
+    if (resp == false) {
+        return false;
+    }
+}
+
+
+
+
+
 function validaOrdenTrabajo() {
+
+
+
+   
     var resp = validaNombre();
     if (resp == false) {
         return false;
@@ -24,14 +52,17 @@ function validaOrdenTrabajo() {
     if (resp == false) {
         return false;
     }
-  
-    
+
+    var resp = validaAnioAuto();
+    if (resp == false) {
+        return false;
+    }
     var resp = validaMensaje();
     if (resp == false) {
         return false;
     }
-    
-    var resp = validaAnioAuto();
+
+    var resp = validamodelo();
     if (resp == false) {
         return false;
     }
@@ -81,7 +112,7 @@ function validaagendamiento() {
     if (resp == false) {
         return false;
     }
-   
+
 
     return true;
 
@@ -315,7 +346,7 @@ function validarFecha() {
     var mes = fechaUsuario.slice(5, 7);
     var dia = fechaUsuario.slice(8, 10);
     console.log('A:' + anito + ' M:' + mes + ' D:' + dia);
-    var fechaNuevaUsuario = new Date(ano, (mes - 1), dia);    
+    var fechaNuevaUsuario = new Date(ano, (mes - 1), dia);
     if (fechaNuevaUsuario < fechaSistema) {
 
         Swal.fire({
@@ -362,13 +393,12 @@ function validaTipoMotor() {
 }
 
 
-function validaAnioAuto()
-{
+function validaAnioAuto() {
     var fechaSistema = new Date();
-    var anito = fechaSistema.slice(0, 4);
-    var anio = document.getElementById('txtanio').value;
-    
-    if (anio < 1970) {
+    var anito2 = fechaSistema.slice(0, 4);
+    var anio2 = document.getElementById('txtanio').value;
+var anioNum =  parseFloat(anio2);
+    if (anioNum < 1970) {
 
         Swal.fire(
             {
@@ -392,4 +422,52 @@ function validaAnioAuto()
 
     return true;
 
+}
+
+
+
+
+function ValidaTamanioMotor() {
+    var nombre = document.getElementById('x').value;
+    var largo = nombre.trim().length;
+    if (largo == 0) {
+
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Modelo',
+                text: 'Debe indicar el modelo del vehiculo'
+            });
+        return false;
+    }
+    if (largo < 3) {
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Modelo',
+            text: 'El modelo tiene un largo menor a 3 caracteres'
+        });
+        return false;
+    }
+    return true;
+}
+
+
+
+function validaPassword() {
+    var pass1= document.getElementById('txtPass1').value;
+    var pass2= document.getElementById('txtPass2').value;
+
+    if (pass1 =! pass2) {
+
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Password',
+                text: 'Las contraseña no coincide'
+            });
+        return false;
+    }
+
+    return true;
 }
