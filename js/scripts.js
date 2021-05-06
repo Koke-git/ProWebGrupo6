@@ -19,12 +19,39 @@ function CreaUser() {
         return false;
     }
 
+    var resp = validapassword();
+    if (resp == false) {
+        return false;
+    }
     
     return true;
 
 }
 
+function validapassword() {
+    var nombre = document.getElementById('txtPass1').value;
+    var largo = nombre.trim().length;
+    if (largo == 0) {
 
+        Swal.fire(
+            {
+                icon: 'error',
+                title: 'Password',
+                text: 'la clave esta vacia'
+            });
+        return false;
+    }
+    if (largo < 3) {
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Nombre',
+            text: 'El nombre tiene un largo menor a 3 caracteres'
+        });
+        return false;
+    }
+    return true;
+}
 
 
 
@@ -59,10 +86,7 @@ function validaOrdenTrabajo() {
         return false;
     }
 
-    var resp = validaAnioAuto();
-    if (resp == false) {
-        return false;
-    }
+   
     var resp = validaMensaje();
     if (resp == false) {
         return false;
@@ -347,24 +371,26 @@ function validarFecha() {
     var fechaSistema = new Date();
     console.log('Fecha Usuario:' + fechaUsuario);
     console.log('Fecha Sistema:' + fechaSistema);
-
-    var anito = fechaUsuario.slice(0, 4);
+    ////////////////////////////////////////// 2021-04-01
+    var ano = fechaUsuario.slice(0, 4);
     var mes = fechaUsuario.slice(5, 7);
     var dia = fechaUsuario.slice(8, 10);
-    console.log('A:' + anito + ' M:' + mes + ' D:' + dia);
+    console.log('A:' + ano + ' M:' + mes + ' D:' + dia);
     var fechaNuevaUsuario = new Date(ano, (mes - 1), dia);
+    console.log('Nueva Fecha:' + fechaNuevaUsuario);
+    //////////////////////////////////////////////////
     if (fechaNuevaUsuario < fechaSistema) {
-
+       
         Swal.fire({
             icon: 'error',
-            title: 'Fecha de Mantencion',
-            text: 'Fecha de de mantencion es menor a la fecha actual'
-        });
+            title: 'Fecha',
+            text: 'Fecha de agendamiento debe ser mayor a la fecha actual'
+          });
         return false;
     }
-
     return true;
 }
+
 
 function validaMarcaOrderTrabajo() {
     var nombre = document.getElementById('cmbmarca').value;
